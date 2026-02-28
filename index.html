@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AppRepo — Your Toolbox</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="hero-inner">
+      <h1 class="hero-title">All Your Tools in One Place</h1>
+      <p class="hero-subtitle">Quick access to every app you've built — simple, fast, and organized.</p>
+      <a href="#tools" class="hero-cta">Explore Tools ↓</a>
+    </div>
+  </header>
+
+  <!-- Search & Filters -->
+  <section class="controls" id="tools">
+    <div class="search-wrap">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Search tools…" autocomplete="off">
+    </div>
+    <div class="category-filters" id="categoryFilters">
+      <button class="cat-btn active" data-category="all">All</button>
+      <button class="cat-btn" data-category="productivity">Productivity</button>
+      <button class="cat-btn" data-category="data">Data Tools</button>
+      <button class="cat-btn" data-category="development">Development</button>
+      <button class="cat-btn" data-category="design">Design Helpers</button>
+    </div>
+  </section>
+
+  <!-- Favorites -->
+  <section class="favorites-section" id="favoritesSection" hidden>
+    <h2 class="section-heading">⭐ Favorites</h2>
+    <div class="tool-grid" id="favoritesGrid"></div>
+  </section>
+
+  <!-- Tool Grid -->
+  <section class="tools-section">
+    <div class="tool-grid" id="toolGrid"></div>
+    <p class="no-results" id="noResults" hidden>No tools match your search.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 AppRepo. All rights reserved.</p>
+    <nav class="footer-links">
+      <a href="#">Portfolio</a>
+      <a href="#">GitHub</a>
+      <a href="#">Contact</a>
+    </nav>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+{
+  "name": "apprepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "clean": "rm -rf dist",
+    "deploy:local": "rm -rf /var/www/local/apprepo.eu/* && cp -r dist/* /var/www/local/apprepo.eu/"
+  },
+  "devDependencies": {
+    "rollup": "^4.30.0",
+    "@rollup/plugin-html": "^2.0.0",
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
