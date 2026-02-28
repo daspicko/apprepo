@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14161f"/>
+      <stop offset="100%" stop-color="#0f1117"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c73ff"/>
+      <stop offset="100%" stop-color="#6c63ff"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <!-- Glow -->
+  <ellipse cx="600" cy="260" rx="300" ry="180" fill="rgba(108,99,255,0.12)"/>
+  <!-- Toolbox body -->
+  <rect x="520" y="230" width="160" height="90" rx="12" fill="url(#box)"/>
+  <!-- Toolbox lid -->
+  <rect x="510" y="215" width="180" height="24" rx="8" fill="#8a83ff"/>
+  <!-- Handle -->
+  <rect x="562" y="186" width="76" height="36" rx="10" fill="none" stroke="#8a83ff" stroke-width="8"/>
+  <!-- Latch -->
+  <rect x="580" y="260" width="40" height="20" rx="6" fill="#0f1117"/>
+  <!-- Title -->
+  <text x="600" y="400" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="700" font-size="52" fill="#e4e6ed">AppRepo</text>
+  <!-- Subtitle -->
+  <text x="600" y="445" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-weight="400" font-size="24" fill="#8b8fa3">All Your Tools in One Place</text>
+</svg>

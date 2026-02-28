@@ -1,7 +1,7 @@
 import html from "@rollup/plugin-html";
 import terser from "@rollup/plugin-terser";
 import postcss from "rollup-plugin-postcss";
-import { readFileSync, copyFileSync } from "node:fs";
+import { readFileSync, copyFileSync, readdirSync, mkdirSync, existsSync } from "node:fs";
 
 // Read the source HTML template
 const template = readFileSync("index.html", "utf-8");
@@ -59,6 +59,12 @@ export default {
       name: "copy-static",
       writeBundle() {
         copyFileSync("404.html", "dist/404.html");
+        // Copy static assets
+        if (existsSync("static")) {
+          for (const file of readdirSync("static")) {
+            copyFileSync(`static/${file}`, `dist/${file}`);
+          }
+        }
       },
     },
   ],
