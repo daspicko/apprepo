@@ -29,7 +29,10 @@ const tools = [
   { id: "shadow-gen",       icon: "🖼️", name: "Shadow Generator",   desc: "Design and export CSS box-shadow values.",          category: "design",      url: "#" },
   { id: "font-preview",     icon: "🔤", name: "Font Preview",       desc: "Preview Google Fonts side by side.",                 category: "design",      url: "#" },
   { id: "image-resizer",    icon: "🖼️", name: "Image Resizer",      desc: "Resize and crop images right in the browser.",      category: "design",      url: "#" },
-];
+
+  // Health tools
+  { id: "zalihe-krvi", icon: "❤️", name: "Zalihe Krvi",       desc: "Prikaz zaliha krvi po bolničkim centrima.",         category: "health", url: "https://zalihe-krvi.apprepo.eu" },
+].filter(tool => tool && tool.url && tool.url.endsWith("apprepo.eu"));
 
 // ── State ────────────────────────────────────────────
 let activeCategory = "all";
@@ -52,6 +55,7 @@ function isFav(id) {
 function createCard(tool, isFavoriteCard = false) {
   const card = document.createElement("a");
   card.href = tool.url;
+  card.target = "_blank";
   card.className = "tool-card";
   card.dataset.category = tool.category;
   card.dataset.id = tool.id;
