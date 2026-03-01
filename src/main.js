@@ -31,7 +31,7 @@ const tools = [
   { id: "image-resizer",    icon: "🖼️", name: "Image Resizer",      desc: "Resize and crop images right in the browser.",      category: "design",      url: "#" },
 
   // Health tools
-  { id: "zalihe-krvi", icon: "❤️", name: "Zalihe Krvi",       desc: "Prikaz zaliha krvi po bolničkim centrima.",         category: "health", url: "https://zalihe-krvi.apprepo.eu" },
+  { id: "zalihe-krvi", icon: "🩸", name: "Zalihe Krvi",       desc: "Prikaz zaliha krvi po bolničkim centrima.",         category: "health", url: "https://zalihe-krvi.apprepo.eu" },
 ].filter(tool => tool && tool.url && tool.url.endsWith("apprepo.eu"));
 
 // ── State ────────────────────────────────────────────
